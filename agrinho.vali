@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conexão Campo-Cidade</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes moveTractor {
+      0% { transform: translateX(-100px); }
+      100% { transform: translateX(110vw); }
+    }
+    .tractor-animation {
+      animation: moveTractor 20s linear infinite;
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      width: 80px;
+    }
+    .floating {
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    body {
+      background: linear-gradient(to top, #d4f5d3 0%, #e9fce9 100%);
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+<body class="relative text-gray-800">
+  <!-- Tratorzinho -->
+  <img src="https://cdn-icons-png.flaticon.com/512/1858/1858563.png" alt="Trator animado" class="tractor-animation z-10">
+
+  <!-- Header -->
+  <header class="bg-green-700 text-white p-6 shadow-md relative z-20">
+    <h1 class="text-3xl font-bold">Conexão Campo-Cidade</h1>
+    <nav class="mt-2">
+      <a href="#sumario" class="mr-4 hover:underline">Sumário</a>
+      <a href="#pagina1" class="mr-4 hover:underline">Início</a>
+      <a href="#pagina2" class="mr-4 hover:underline">Interdependência</a>
+      <a href="#pagina3" class="mr-4 hover:underline">Agro 4.0</a>
+      <a href="#pagina4" class="hover:underline">Soluções Sustentáveis</a>
+    </nav>
+  </header>
+
+  <!-- Sumário -->
+  <section id="sumario" class="p-10 bg-white relative z-10">
+    <h2 class="text-2xl font-semibold text-green-800 mb-4">Sumário</h2>
+    <ul class="list-disc list-inside">
+      <li><a href="#pagina1" class="text-green-600 hover:underline">Unindo Mundos: Campo e Cidade em Harmonia</a></li>
+      <li><a href="#pagina2" class="text-green-600 hover:underline">Somos Um Só Ecossistema</a></li>
+      <li><a href="#pagina3" class="text-green-600 hover:underline">Agro 4.0: O Futuro do Campo é Agora</a></li>
+      <li><a href="#pagina4" class="text-green-600 hover:underline">Soluções Sustentáveis para o Futuro</a></li>
+    </ul>
+  </section>
+
+  <!-- Página 1 -->
+  <section id="pagina1" class="p-10 relative z-10">
+    <img src="https://images.unsplash.com/photo-1576765607924-b27b3f4d4e81?auto=format&fit=crop&w=1200&q=80" alt="Campo e cidade" class="rounded-lg shadow-md mb-6 w-full max-h-[400px] object-cover">
+    <h2 class="text-2xl font-semibold text-green-800 mb-4">Unindo Mundos: Campo e Cidade em Harmonia</h2>
+    <p class="mb-4">
+      O campo e a cidade sempre estiveram interligados. Enquanto o campo fornece alimentos, matéria-prima e recursos naturais,
+      a cidade devolve conhecimento, tecnologia e infraestrutura. Essa troca constante fortalece a economia, a cultura e a vida das pessoas.
+    </p>
+    <p>
+      Celebrar essa conexão é entender que não há cidade sem campo e que o campo se transforma com os avanços urbanos. A produção rural
+      abastece os mercados urbanos, enquanto o consumo das cidades impulsiona a inovação no campo.
+    </p>
+    <p class="mt-4 text-sm text-gray-600">Fonte: Ministério da Agricultura – www.gov.br/agricultura</p>
+  </section>
+
+  <!-- Página 2 -->
+  <section id="pagina2" class="p-10 bg-green-100 relative z-10">
+    <img src="https://images.unsplash.com/photo-1576768128497-20bd35689312?auto=format&fit=crop&w=1200&q=80" alt="Feira livre rural e urbana" class="rounded-lg shadow-md mb-6 w-full max-h-[400px] object-cover">
+    <h2 class="text-2xl font-semibold text-green-800 mb-4">Somos Um Só Ecossistema</h2>
+    <p class="mb-4">
+      A cidade consome o que o campo produz. Já o campo se moderniza com os conhecimentos, tecnologias e ferramentas desenvolvidos nos
+      centros urbanos. Essa interdependência cria laços sociais e econômicos fundamentais.
+    </p>
+    <p>
+      As feiras, os circuitos curtos de comercialização e os alimentos orgânicos aproximam os dois mundos, criando consciência social,
+      segurança alimentar e valorização do trabalho rural.
+    </p>
+    <p class="mt-4 text-sm text-gray-600">Fonte: Embrapa – www.embrapa.br</p>
+  </section>
+
+  <!-- Página 3 -->
+  <section id="pagina3" class="p-10 relative z-10">
+    <img src="https://images.unsplash.com/photo-1581090700227-1e8a68cae924?auto=format&fit=crop&w=1200&q=80" alt="Tecnologia no campo - Agro 4.0" class="rounded-lg shadow-md mb-6 w-full max-h-[400px] object-cover">
+    <h2 class="text-2xl font-semibold text-green-800 mb-4">Agro 4.0: O Futuro do Campo é Agora</h2>
+    <p class="mb-4">
+      A chamada Revolução Agro 4.0 traz ao campo o uso de inteligência artificial, big data, internet das coisas (IoT), drones,
+      sensores e softwares de gestão rural. Com essas tecnologias, o campo se torna mais eficiente, sustentável e conectado.
+    </p>
+    <p>
+      Com os dados fornecidos pela Agro 4.0, produtores podem tomar decisões mais precisas, economizar recursos e diminuir o impacto
+      ambiental. Essa revolução aproxima ainda mais o campo da cidade, pois o que é desenvolvido nas universidades e centros
+      tecnológicos chega rapidamente à zona rural.
+    </p>
+    <p class="mt-4 text-sm text-gray-600">Fonte: SEBRAE – www.sebrae.com.br</p>
+  </section>
+
+  <!-- Página 4 -->
+  <section id="pagina4" class="p-10 bg-green-100 relative z-10">
+    <img src="https://images.unsplash.com/photo-1517957754644-876f9c7bd7e4?auto=format&fit=crop&w=1200&q=80" alt="Soluções Sustentáveis" class="rounded-lg shadow-md mb-6 w-full max-h-[400px] object-cover">
+    <h2 class="text-2xl font-semibold text-green-800 mb-4">Soluções Sustentáveis para o Futuro</h2>
+    <p class="mb-4">
+      As soluções sustentáveis no campo são essenciais para garantir a preservação ambiental e o bem-estar das futuras gerações. Técnicas
+      como o plantio direto, o uso racional da água, a agrofloresta e a energia renovável já são realidade em muitas propriedades.
+    </p>
+    <p>
+      O apoio da cidade, com políticas públicas e consumo consciente, é decisivo para incentivar práticas ecológicas. O futuro está na
+      integração de saberes e práticas sustentáveis que beneficiem tanto o campo quanto os centros urbanos.
+    </p>
+    <p class="mt-4 text-sm text-gray-600">Fonte: Instituto Socioambiental – www.socioambiental.org</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-green-700 text-white text-center p-4 relative z-20">
+    <p>&copy; 2025 Conexão Campo-Cidade. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
